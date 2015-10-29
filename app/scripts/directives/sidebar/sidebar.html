@@ -1,0 +1,22 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav in" id="side-menu">
+		
+			<li ng-class="{active: collapseVar=={{menu.id}} }"
+				ng-repeat=" menu in menuBar.menus ">{{dropDown}} <a href=""
+				ng-click="check(menu.id)"><i class="{{menu.style}}"></i>
+					{{menu.displayName}}<span class="fa arrow"></span></a>
+				<ul class="nav nav-second-level"
+					collapse="collapseVar != {{menu.id}} "
+					ng-repeat=" menuItem in menu.menuItems">
+					<li ui-sref-active="active"><a
+						ui-sref="{{menuItem.refId}}">{{menuItem.displayName}}</a></li>
+				</ul>
+			</li>		
+        </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+</div> 
+
+
+

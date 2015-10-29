@@ -1,0 +1,1 @@
+angular.module('sbAdminApp').controller('addOfferCtrl', function($scope,addOfferService) {	$scope.test=addOfferService.getTestData() ;});

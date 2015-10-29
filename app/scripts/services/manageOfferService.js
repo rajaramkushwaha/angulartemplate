@@ -1,0 +1,1 @@
+angular.module('sbAdminApp').service('manageOfferService', function manageOfferService($http) {	  this.getTestData=function(){		  return "I am at views/manageOffer.html";  }; });

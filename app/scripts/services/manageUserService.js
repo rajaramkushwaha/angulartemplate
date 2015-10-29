@@ -1,0 +1,1 @@
+angular.module('sbAdminApp').service('manageUserService', function manageUserService($http) {	  this.getTestData=function(){		  return "I am at views/manageUser.html";  }; });

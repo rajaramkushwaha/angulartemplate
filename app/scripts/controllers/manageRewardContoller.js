@@ -1,0 +1,1 @@
+angular.module('sbAdminApp').controller('manageRewardCtrl', function($scope,manageRewardService) {	$scope.test=manageRewardService.getTestData() ;});

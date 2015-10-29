@@ -1,0 +1,1 @@
+angular.module('sbAdminApp').service('manageRewardService', function manageRewardService($http) {	  this.getTestData=function(){		  return "I am at views/manageReward.html";  }; });

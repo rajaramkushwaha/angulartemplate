@@ -1,0 +1,1 @@
+angular.module('sbAdminApp').service('addRewarService', function addRewarService($http) {	  this.getTestData=function(){		  return "I am at views/addRewar.html";  }; });
